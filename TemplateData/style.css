@@ -11,5 +11,12 @@ body { padding: 0; margin: 0 }
 #unity-footer { position: relative }
 .unity-mobile #unity-footer { display: none }
 
+#download-info {
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+
 
 
