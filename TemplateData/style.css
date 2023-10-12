@@ -11,10 +11,10 @@ body { padding: 0; margin: 0 }
 #unity-footer { position: relative }
 .unity-mobile #unity-footer { display: none }
 
-#game-size-info {
+#download-info {
     color: white;
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 10px;
     text-align: center;
 }
 

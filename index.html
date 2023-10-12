@@ -53,7 +53,7 @@
             <div id="unity-logo"></div>
             <div id="unity-progress-bar-empty">
                 <div id="unity-progress-bar-full"></div>
-                <div id="game-size-info">62MB</div>
+                <div id="download-info">0/62MB</div>
             </div>
         </div>
         <div id="unity-warning"> </div>
@@ -117,6 +117,8 @@
         script.src = loaderUrl;
         script.onload = () => {
             createUnityInstance(canvas, config, (progress) => {
+                var loadedMB = (progress * 62).toFixed(1);  // Vypočíta stiahnuté MB na základe percent
+                document.getElementById("download-info").textContent = `${loadedMB}/62MB`;
                 progressBarFull.style.width = 100 * progress + "%";
             }).then((unityInstance) => {
                 loadingBar.style.display = "none";
